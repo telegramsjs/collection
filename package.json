@@ -1,0 +1,28 @@
+{
+  "name": "@telegram.ts/collection",
+  "version": "1.0.0",
+  "description": "Utility data structure used in telegramsjs",
+  "main": "./dist/index.js",
+  "typing": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "./dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "collection",
+    "library",
+    "sempai-07"
+  ],
+  "author": "Sempai<zadmanthegreat@gmail.com>"
+}
