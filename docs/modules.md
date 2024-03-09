@@ -26,4 +26,4 @@
 
 #### Defined in
 
-[index.ts:4](https://github.com/telegramsjs/collection/blob/1e2545e/src/index.ts#L4)
+[index.ts:4](https://github.com/telegramsjs/collection/blob/89a4d12/src/index.ts#L4)

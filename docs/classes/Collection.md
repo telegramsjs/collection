@@ -19,7 +19,10 @@ A collection data structure that maps unique keys to values.
 
 ### Properties
 
-- [#items](Collection.md##items)
+- [items](Collection.md#items)
+
+### Accessors
+
 - [size](Collection.md#size)
 
 ### Methods
@@ -104,31 +107,35 @@ Create a new Collection instance.
 
 #### Defined in
 
-[collection.ts:27](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L27)
+[collection.ts:22](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L22)
 
 ## Properties
 
-### #items
+### items
 
-• `Private` **#items**: `Map`\<`K`, `V`\>
+• `Readonly` **items**: `Map`\<`K`, `V`\>
 
 The underlying map that stores the key-value pairs.
 
 #### Defined in
 
-[collection.ts:16](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L16)
+[collection.ts:16](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L16)
 
-___
+## Accessors
 
 ### size
 
-• **size**: `number`
+• `get` **size**(): `number`
+
+#### Returns
+
+`number`
 
 The number of key-value pairs in the collection.
 
 #### Defined in
 
-[collection.ts:21](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L21)
+[collection.ts:778](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L778)
 
 ## Methods
 
@@ -146,7 +153,7 @@ An iterator object that can be used to iterate over the key-value pairs of the C
 
 #### Defined in
 
-[collection.ts:785](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L785)
+[collection.ts:786](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L786)
 
 ___
 
@@ -170,7 +177,7 @@ The value at the specified index, or undefined if the index is out of range.
 
 #### Defined in
 
-[collection.ts:542](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L542)
+[collection.ts:536](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L536)
 
 ___
 
@@ -194,7 +201,7 @@ an array with new collections
 
 #### Defined in
 
-[collection.ts:693](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L693)
+[collection.ts:687](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L687)
 
 ___
 
@@ -210,7 +217,7 @@ Remove all key-value pairs from the collection.
 
 #### Defined in
 
-[collection.ts:142](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L142)
+[collection.ts:136](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L136)
 
 ___
 
@@ -226,7 +233,7 @@ Creates a copy of this collection.
 
 #### Defined in
 
-[collection.ts:684](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L684)
+[collection.ts:678](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L678)
 
 ___
 
@@ -257,7 +264,7 @@ A new combined Collection instance.
 
 #### Defined in
 
-[collection.ts:435](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L435)
+[collection.ts:429](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L429)
 
 ___
 
@@ -275,7 +282,7 @@ A new sorted Collection instance.
 
 #### Defined in
 
-[collection.ts:411](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L411)
+[collection.ts:405](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L405)
 
 ___
 
@@ -299,7 +306,7 @@ True if the key-value pair was removed, false if the key was not in the collecti
 
 #### Defined in
 
-[collection.ts:134](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L134)
+[collection.ts:128](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L128)
 
 ___
 
@@ -330,7 +337,7 @@ A new Collection instance containing the difference.
 
 #### Defined in
 
-[collection.ts:450](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L450)
+[collection.ts:444](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L444)
 
 ___
 
@@ -355,7 +362,7 @@ The collection instance (for chaining).
 
 #### Defined in
 
-[collection.ts:571](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L571)
+[collection.ts:565](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L565)
 
 ___
 
@@ -373,7 +380,7 @@ A new Iterator object containing the [key, value] pairs for each element in the 
 
 #### Defined in
 
-[collection.ts:663](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L663)
+[collection.ts:657](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L657)
 
 ___
 
@@ -404,7 +411,7 @@ True if the collections are equal, false otherwise.
 
 #### Defined in
 
-[collection.ts:494](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L494)
+[collection.ts:488](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L488)
 
 ___
 
@@ -429,7 +436,7 @@ True if all elements pass the test, false otherwise
 
 #### Defined in
 
-[collection.ts:221](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L221)
+[collection.ts:215](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L215)
 
 ___
 
@@ -454,7 +461,7 @@ A new Collection instance containing the filtered key-value pairs.
 
 #### Defined in
 
-[collection.ts:167](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L167)
+[collection.ts:161](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L161)
 
 ___
 
@@ -479,7 +486,7 @@ The value of the first element that passes the test, or undefined if no element 
 
 #### Defined in
 
-[collection.ts:261](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L261)
+[collection.ts:255](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L255)
 
 ___
 
@@ -504,7 +511,7 @@ The key of the first element that passes the test, or undefined if no element pa
 
 #### Defined in
 
-[collection.ts:342](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L342)
+[collection.ts:336](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L336)
 
 ___
 
@@ -535,7 +542,7 @@ A new Collection instance with the flattened mapped values.
 
 #### Defined in
 
-[collection.ts:306](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L306)
+[collection.ts:300](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L300)
 
 ___
 
@@ -566,7 +573,7 @@ A new Collection instance with the flattened mapped values.
 
 #### Defined in
 
-[collection.ts:375](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L375)
+[collection.ts:369](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L369)
 
 ___
 
@@ -589,7 +596,7 @@ Call a given function for each key-value pair in the collection.
 
 #### Defined in
 
-[collection.ts:151](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L151)
+[collection.ts:145](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L145)
 
 ___
 
@@ -613,7 +620,7 @@ The value associated with the key, or undefined if the key is not in the collect
 
 #### Defined in
 
-[collection.ts:37](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L37)
+[collection.ts:31](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L31)
 
 ___
 
@@ -637,7 +644,7 @@ True if the collection contains the key, false otherwise.
 
 #### Defined in
 
-[collection.ts:57](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L57)
+[collection.ts:51](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L51)
 
 ___
 
@@ -662,7 +669,7 @@ An object containing keys and their existence status, or a boolean if isEnabled 
 
 #### Defined in
 
-[collection.ts:69](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L69)
+[collection.ts:63](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L63)
 
 ___
 
@@ -687,7 +694,7 @@ An object containing values and their existence status, or a boolean if isEnable
 
 #### Defined in
 
-[collection.ts:103](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L103)
+[collection.ts:97](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L97)
 
 ___
 
@@ -718,7 +725,7 @@ A new Collection instance containing the intersection.
 
 #### Defined in
 
-[collection.ts:480](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L480)
+[collection.ts:474](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L474)
 
 ___
 
@@ -736,7 +743,7 @@ An array containing all the keys of the collection in insertion order
 
 #### Defined in
 
-[collection.ts:365](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L365)
+[collection.ts:359](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L359)
 
 ___
 
@@ -760,7 +767,7 @@ The key at the specified index, or undefined if the index is out of range.
 
 #### Defined in
 
-[collection.ts:583](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L583)
+[collection.ts:577](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L577)
 
 ___
 
@@ -784,7 +791,7 @@ returns the first key corresponding to the specified value in the collection
 
 #### Defined in
 
-[collection.ts:712](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L712)
+[collection.ts:706](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L706)
 
 ___
 
@@ -800,7 +807,7 @@ an iterator that contains all the keys of the collection's elements.
 
 #### Defined in
 
-[collection.ts:323](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L323)
+[collection.ts:317](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L317)
 
 ___
 
@@ -818,7 +825,7 @@ The last value in the collection, or undefined if the collection is empty.
 
 #### Defined in
 
-[collection.ts:560](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L560)
+[collection.ts:554](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L554)
 
 ___
 
@@ -836,7 +843,7 @@ The last key in the collection, or undefined if the collection is empty.
 
 #### Defined in
 
-[collection.ts:551](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L551)
+[collection.ts:545](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L545)
 
 ___
 
@@ -867,7 +874,7 @@ A new collection with the results of calling the callback on each element
 
 #### Defined in
 
-[collection.ts:186](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L186)
+[collection.ts:180](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L180)
 
 ___
 
@@ -898,7 +905,7 @@ A new Collection instance with the mapped values.
 
 #### Defined in
 
-[collection.ts:395](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L395)
+[collection.ts:389](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L389)
 
 ___
 
@@ -923,7 +930,7 @@ An array of two `GroupedValues` objects representing the partitioned groups.
 
 #### Defined in
 
-[collection.ts:636](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L636)
+[collection.ts:630](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L630)
 
 ___
 
@@ -941,7 +948,7 @@ A random value from the collection, or undefined if the collection is empty.
 
 #### Defined in
 
-[collection.ts:528](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L528)
+[collection.ts:522](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L522)
 
 ___
 
@@ -959,7 +966,7 @@ A random key from the collection, or undefined if the collection is empty.
 
 #### Defined in
 
-[collection.ts:593](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L593)
+[collection.ts:587](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L587)
 
 ___
 
@@ -990,7 +997,7 @@ The reduced value
 
 #### Defined in
 
-[collection.ts:239](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L239)
+[collection.ts:233](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L233)
 
 ___
 
@@ -1022,7 +1029,7 @@ The reduced value
 
 #### Defined in
 
-[collection.ts:279](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L279)
+[collection.ts:273](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L273)
 
 ___
 
@@ -1040,7 +1047,7 @@ A new Collection instance with the key-value pairs reversed.
 
 #### Defined in
 
-[collection.ts:604](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L604)
+[collection.ts:598](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L598)
 
 ___
 
@@ -1065,7 +1072,7 @@ The collection instance (for chaining).
 
 #### Defined in
 
-[collection.ts:47](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L47)
+[collection.ts:41](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L41)
 
 ___
 
@@ -1090,7 +1097,7 @@ True if at least one element passes the test, false otherwise
 
 #### Defined in
 
-[collection.ts:203](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L203)
+[collection.ts:197](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L197)
 
 ___
 
@@ -1114,7 +1121,7 @@ A new sorted Collection instance.
 
 #### Defined in
 
-[collection.ts:423](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L423)
+[collection.ts:417](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L417)
 
 ___
 
@@ -1138,7 +1145,7 @@ A new Collection instance containing the subset of items.
 
 #### Defined in
 
-[collection.ts:464](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L464)
+[collection.ts:458](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L458)
 
 ___
 
@@ -1156,7 +1163,7 @@ A new Collection instance with all duplicate values removed.
 
 #### Defined in
 
-[collection.ts:616](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L616)
+[collection.ts:610](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L610)
 
 ___
 
@@ -1180,7 +1187,7 @@ The collection instance (for chaining).
 
 #### Defined in
 
-[collection.ts:514](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L514)
+[collection.ts:508](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L508)
 
 ___
 
@@ -1198,7 +1205,7 @@ An array containing all the values of the collection in insertion order
 
 #### Defined in
 
-[collection.ts:357](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L357)
+[collection.ts:351](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L351)
 
 ___
 
@@ -1214,7 +1221,7 @@ ___
 
 #### Defined in
 
-[collection.ts:671](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L671)
+[collection.ts:665](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L665)
 
 ___
 
@@ -1232,7 +1239,7 @@ An object containing the elements of the collection.
 
 #### Defined in
 
-[collection.ts:773](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L773)
+[collection.ts:767](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L767)
 
 ___
 
@@ -1248,7 +1255,7 @@ an instance of the Map class that contains all the elements of the given collect
 
 #### Defined in
 
-[collection.ts:745](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L745)
+[collection.ts:739](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L739)
 
 ___
 
@@ -1266,7 +1273,7 @@ A new Collection instance with the reversed key-value pairs.
 
 #### Defined in
 
-[collection.ts:753](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L753)
+[collection.ts:747](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L747)
 
 ___
 
@@ -1291,7 +1298,7 @@ A new Collection instance with the specified subset of key-value pairs.
 
 #### Defined in
 
-[collection.ts:764](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L764)
+[collection.ts:758](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L758)
 
 ___
 
@@ -1307,7 +1314,7 @@ an iterator that contains all the values of the elements in the collection.
 
 #### Defined in
 
-[collection.ts:331](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L331)
+[collection.ts:325](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L325)
 
 ___
 
@@ -1332,4 +1339,4 @@ A new Collection with the updated value.
 
 #### Defined in
 
-[collection.ts:729](https://github.com/telegramsjs/collection/blob/1e2545e/src/collection.ts#L729)
+[collection.ts:723](https://github.com/telegramsjs/collection/blob/89a4d12/src/collection.ts#L723)
