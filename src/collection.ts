@@ -13,7 +13,7 @@ class Collection<K, V> {
   /**
    * The underlying map that stores the key-value pairs.
    */
-  private readonly items: Map<K, V>;
+  public readonly items: Map<K, V>;
 
   /**
    * Create a new Collection instance.
