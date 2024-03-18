@@ -1,4 +1,4 @@
-import { Collection } from "./index.js";
+import { Collection, type Entry, type IGroupedValues } from "./collection.js";
 
-export { Collection };
+export { Collection, Entry, IGroupedValues };
 export default { Collection };

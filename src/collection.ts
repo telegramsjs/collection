@@ -1,6 +1,6 @@
 type Entry<K, V> = [K, V];
 
-interface GroupedValues<K, V> {
+interface IGroupedValues<K, V> {
   key: K;
   values: V[];
 }
@@ -625,17 +625,17 @@ class Collection<K, V> {
    * Create a new collection by partitioning the elements into two groups based on a condition.
    * @param callbackFn - The condition to test each element against. It should take three arguments: the value, the key, and the collection instance. Return true to include the element in the first group, false to include it in the second group.
    * @param thisArg - An optional value to use as `this` when calling the function.
-   * @returns An array of two `GroupedValues` objects representing the partitioned groups.
+   * @returns An array of two `IGroupedValues` objects representing the partitioned groups.
    */
   partition(
     callbackFn: (value: V, key: K, collection: Collection<K, V>) => boolean,
     thisArg?: unknown,
-  ): GroupedValues<K, V>[] {
-    const group1: GroupedValues<K, V> = {
+  ): IGroupedValues<K, V>[] {
+    const group1: IGroupedValues<K, V> = {
       key: null as unknown as K,
       values: [],
     };
-    const group2: GroupedValues<K, V> = {
+    const group2: IGroupedValues<K, V> = {
       key: null as unknown as K,
       values: [],
     };
@@ -662,8 +662,8 @@ class Collection<K, V> {
    * @returns - an array that contains all the values of the elements of the collection, grouped by keys
    */
 
-  toArrayByKey(): GroupedValues<K, V>[] {
-    const result: GroupedValues<K, V>[] = [];
+  toArrayByKey(): IGroupedValues<K, V>[] {
+    const result: IGroupedValues<K, V>[] = [];
 
     for (const key of this.keys()) {
       const values = Array.from(this.filter((value, k) => k === key).values());
@@ -788,4 +788,4 @@ class Collection<K, V> {
   }
 }
 
-export { Collection };
+export { Collection, Entry, IGroupedValues };

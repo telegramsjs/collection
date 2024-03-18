@@ -1,4 +1,4 @@
-import { Collection } from "./collection";
+import { Collection, type Entry, type IGroupedValues } from "./collection";
 
-export { Collection };
+export { Collection, Entry, IGroupedValues };
 export default { Collection };
