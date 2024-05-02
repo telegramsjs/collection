@@ -1,7 +1,7 @@
 # @telegram.ts/collection
 
 [![NPM Version](https://img.shields.io/npm/v/@telegram.ts/collection)](https://www.npmjs.com/package/@telegram.ts/collection)
-[![Bot API](https://img.shields.io/badge/Bot%20API-v.7.1-00aced.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
+[![Bot API](https://img.shields.io/badge/Bot%20API-v.7.2-00aced.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
 [![NPM Downloads](https://img.shields.io/npm/dt/@telegram.ts/collection.svg?maxAge=3600)](https://www.npmjs.com/package/@telegram.ts/collection)
 [![License](https://img.shields.io/npm/l/@telegram.ts/collection)](https://github.com/telegramsjs/plugins/blob/main/LICENSE)
 
@@ -48,3 +48,7 @@ myCollection.forEach((value, key) => {
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/telegramsjs/collection/blob/main/LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please create a `GitHub` issue or submit a pull request. Additionally, feel free to reach out to me on Telegram via my username `@SempaiJS` or on Discord using my username `sempaika_chess`.
