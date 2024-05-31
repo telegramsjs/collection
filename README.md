@@ -1,7 +1,6 @@
 # @telegram.ts/collection
 
 [![NPM Version](https://img.shields.io/npm/v/@telegram.ts/collection)](https://www.npmjs.com/package/@telegram.ts/collection)
-[![Bot API](https://img.shields.io/badge/Bot%20API-v.7.2-00aced.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
 [![NPM Downloads](https://img.shields.io/npm/dt/@telegram.ts/collection.svg?maxAge=3600)](https://www.npmjs.com/package/@telegram.ts/collection)
 [![License](https://img.shields.io/npm/l/@telegram.ts/collection)](https://github.com/telegramsjs/plugins/blob/main/LICENSE)
 
